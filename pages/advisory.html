@@ -18,61 +18,60 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #FFFFFF;
-            color: #1F2937;
+            color: #4B5563;
             line-height: 1.6;
+            background-color: #F7F8FA;
         }
 
-        /* Navigation */
-        nav {
-            position: sticky;
+        /* Header */
+        header {
+            position: fixed;
             top: 0;
-            z-index: 1000;
+            left: 0;
+            right: 0;
+            height: 70px;
             background-color: #FFFFFF;
-            border-bottom: 1px solid #E5E7EB;
-            padding: 1.25rem 2rem;
+            border-bottom: 1px solid #E8EAEF;
+            z-index: 1000;
         }
 
-        .nav-container {
+        nav {
             max-width: 1400px;
             margin: 0 auto;
+            padding: 0 40px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            height: 100%;
         }
 
-        .nav-logo {
+        .logo {
             font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
+            font-size: 22px;
             font-weight: 700;
             color: #0F1B4C;
             text-decoration: none;
+            letter-spacing: -0.5px;
         }
 
         .nav-links {
             display: flex;
             list-style: none;
-            gap: 2.5rem;
+            gap: 50px;
             align-items: center;
         }
 
         .nav-links a {
-            color: #1F2937;
+            color: #4B5563;
             text-decoration: none;
-            font-size: 0.95rem;
+            font-size: 14px;
             font-weight: 500;
             transition: color 0.3s ease;
-            position: relative;
         }
 
-        .nav-links a:hover {
-            color: #C9A84C;
-        }
-
+        .nav-links a:hover,
         .nav-links a.active {
             color: #C9A84C;
-            border-bottom: 3px solid #C9A84C;
-            padding-bottom: 0.25rem;
         }
 
         .mobile-menu-btn {
@@ -80,51 +79,57 @@
             background: none;
             border: none;
             color: #0F1B4C;
-            font-size: 1.5rem;
+            font-size: 24px;
             cursor: pointer;
         }
 
         /* Page Header */
         .page-header {
+            margin-top: 70px;
+            background-color: #FFFFFF;
+            padding: 60px 40px;
+            border-bottom: 1px solid #E8EAEF;
+        }
+
+        .page-header-content {
             max-width: 1400px;
             margin: 0 auto;
-            padding: 4rem 2rem 2rem;
-            text-align: center;
         }
 
         .page-header h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 3rem;
+            font-size: 48px;
             font-weight: 700;
             color: #0F1B4C;
-            margin-bottom: 0.5rem;
+            margin-bottom: 16px;
         }
 
-        .page-header .underline {
-            display: inline-block;
-            border-bottom: 4px solid #C9A84C;
-            padding-bottom: 0.25rem;
+        .page-header h1 span {
+            display: block;
+            width: 180px;
+            height: 4px;
+            background-color: #C9A84C;
+            margin-top: 12px;
         }
 
         /* Intro Section */
         .intro-section {
             max-width: 900px;
-            margin: 3rem auto;
-            padding: 0 2rem;
+            margin: 60px auto;
+            padding: 0 40px;
             text-align: center;
         }
 
         .intro-section p {
-            font-size: 1.05rem;
-            color: #6B7280;
+            font-size: 16px;
+            color: #4B5563;
             line-height: 1.8;
         }
 
         /* Services Grid */
         .services-section {
-            background-color: #F5F6F8;
-            padding: 4rem 2rem;
-            margin-top: 3rem;
+            background-color: #FFFFFF;
+            padding: 80px 40px;
         }
 
         .services-container {
@@ -135,130 +140,210 @@
         .services-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-            margin-bottom: 2rem;
+            gap: 40px;
         }
 
         .service-card {
-            background: #FFFFFF;
-            padding: 2.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            background: #F7F8FA;
+            padding: 40px;
+            border-radius: 4px;
+            border: 1px solid #E8EAEF;
+            border-left: 4px solid #C9A84C;
+            box-shadow: 0 2px 12px rgba(15, 27, 76, 0.04);
             transition: all 0.3s ease;
         }
 
         .service-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-        }
-
-        .service-icon {
-            width: 50px;
-            height: 50px;
-            margin-bottom: 1.25rem;
-        }
-
-        .service-icon svg {
-            width: 100%;
-            height: 100%;
+            box-shadow: 0 8px 24px rgba(15, 27, 76, 0.08);
         }
 
         .service-card h3 {
             font-family: 'Playfair Display', serif;
-            font-size: 1.2rem;
+            font-size: 18px;
             font-weight: 700;
             color: #0F1B4C;
-            margin-bottom: 0.75rem;
-        }
-
-        .service-card .divider {
-            width: 40px;
-            height: 2px;
-            background-color: #C9A84C;
-            margin-bottom: 1rem;
+            margin-bottom: 16px;
+            line-height: 1.4;
         }
 
         .service-card p {
-            font-size: 0.95rem;
-            color: #6B7280;
+            font-size: 15px;
+            color: #4B5563;
             line-height: 1.7;
         }
 
-        /* Engagement Approach */
-        .approach-section {
-            max-width: 1200px;
-            margin: 4rem auto;
-            padding: 0 2rem;
+        /* Featured Paper Section */
+        .paper-section {
+            background-color: #F7F8FA;
+            padding: 80px 40px;
         }
 
-        .approach-section h2 {
+        .paper-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-heading {
             font-family: 'Playfair Display', serif;
-            font-size: 2rem;
+            font-size: 40px;
             font-weight: 700;
             color: #0F1B4C;
             text-align: center;
-            margin-bottom: 2.5rem;
+            margin-bottom: 60px;
         }
 
-        .approach-card {
-            background: #F5F6F8;
-            padding: 2.5rem;
-            border-radius: 8px;
+        .paper-card {
+            background: #FFFFFF;
+            padding: 50px;
+            border-radius: 4px;
+            border: 1px solid #E8EAEF;
             border-left: 4px solid #C9A84C;
+            box-shadow: 0 2px 12px rgba(15, 27, 76, 0.04);
+            max-width: 900px;
+            margin: 0 auto;
         }
 
-        .approach-card h3 {
+        .paper-card h3 {
             font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
+            font-size: 28px;
             font-weight: 700;
             color: #0F1B4C;
-            margin-bottom: 1.25rem;
+            margin-bottom: 24px;
         }
 
-        .approach-card p {
-            font-size: 0.95rem;
-            color: #6B7280;
+        .paper-card p {
+            font-size: 16px;
+            color: #4B5563;
             line-height: 1.8;
-            margin-bottom: 1rem;
+            margin-bottom: 24px;
         }
 
-        .approach-card p:last-child {
+        .paper-card p:last-child {
             margin-bottom: 0;
+        }
+
+        /* Engagement Section */
+        .engagement-section {
+            background-color: #FFFFFF;
+            padding: 80px 40px;
+        }
+
+        .engagement-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .engagement-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 60px;
+        }
+
+        .engagement-intro p {
+            font-size: 16px;
+            color: #4B5563;
+            line-height: 1.8;
+        }
+
+        .engagement-types {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .engagement-type {
+            background: #F7F8FA;
+            padding: 40px;
+            border-radius: 4px;
+            border: 1px solid #E8EAEF;
+        }
+
+        .engagement-type h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 16px;
+            font-weight: 700;
+            color: #0F1B4C;
+            margin-bottom: 12px;
+        }
+
+        .engagement-type p {
+            font-size: 15px;
+            color: #4B5563;
+            line-height: 1.7;
+        }
+
+        /* Process Timeline */
+        .process-section {
+            background: #F7F8FA;
+            padding: 40px;
+            border-radius: 4px;
+            border: 1px solid #E8EAEF;
+            margin-top: 40px;
+        }
+
+        .process-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: #0F1B4C;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .timeline {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+
+        .timeline-step {
+            font-size: 14px;
+            font-weight: 600;
+            color: #0F1B4C;
+        }
+
+        .timeline-step:not(:last-child):after {
+            content: '→';
+            position: absolute;
+            margin-left: 10px;
+            color: #C9A84C;
         }
 
         /* CTA Section */
         .cta-section {
-            background: linear-gradient(135deg, #0F1B4C 0%, #1a2f5f 100%);
+            background-color: #0F1B4C;
             color: #FFFFFF;
-            padding: 4rem 2rem;
+            padding: 80px 40px;
             text-align: center;
-            margin-top: 4rem;
+            margin-top: 60px;
         }
 
         .cta-section h2 {
             font-family: 'Playfair Display', serif;
-            font-size: 2rem;
+            font-size: 40px;
             font-weight: 700;
-            margin-bottom: 1rem;
+            margin-bottom: 24px;
         }
 
         .cta-section p {
-            font-size: 1rem;
-            margin-bottom: 2rem;
-            opacity: 0.95;
+            font-size: 16px;
+            margin-bottom: 40px;
             max-width: 600px;
             margin-left: auto;
             margin-right: auto;
+            line-height: 1.8;
         }
 
         .cta-button {
             display: inline-block;
             background-color: #C9A84C;
             color: #0F1B4C;
-            padding: 0.875rem 2rem;
+            padding: 12px 32px;
             border-radius: 4px;
             text-decoration: none;
-            font-size: 0.95rem;
+            font-size: 14px;
             font-weight: 600;
             transition: all 0.3s ease;
             border: 2px solid #C9A84C;
@@ -266,52 +351,33 @@
 
         .cta-button:hover {
             background-color: transparent;
-            color: #FFFFFF;
+            color: #C9A84C;
         }
 
         /* Footer */
         footer {
             background-color: #0F1B4C;
             color: #FFFFFF;
-            padding: 3rem 2rem 1.5rem;
-            margin-top: 4rem;
+            padding: 60px 40px 30px;
         }
 
-        .footer-container {
+        .footer-content {
             max-width: 1400px;
             margin: 0 auto;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 3rem;
-            margin-bottom: 2rem;
+            gap: 60px;
+            margin-bottom: 40px;
         }
 
         .footer-col h4 {
             font-family: 'Playfair Display', serif;
-            font-size: 0.95rem;
+            font-size: 14px;
             font-weight: 700;
+            margin-bottom: 20px;
             color: #C9A84C;
-            margin-bottom: 1rem;
             text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-
-        .footer-col p {
-            font-size: 0.85rem;
-            line-height: 1.8;
-            color: #D1D5DB;
-            margin-bottom: 0.5rem;
-        }
-
-        .footer-col a {
-            color: #D1D5DB;
-            text-decoration: none;
-            font-size: 0.85rem;
-            transition: color 0.3s ease;
-        }
-
-        .footer-col a:hover {
-            color: #C9A84C;
+            letter-spacing: 0.5px;
         }
 
         .footer-col ul {
@@ -319,113 +385,164 @@
         }
 
         .footer-col ul li {
-            margin-bottom: 0.5rem;
+            margin-bottom: 12px;
+        }
+
+        .footer-col a {
+            color: #ccc;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-col a:hover {
+            color: #C9A84C;
         }
 
         .footer-bottom {
             border-top: 1px solid rgba(201, 168, 76, 0.2);
-            padding-top: 1.5rem;
+            padding-top: 30px;
             text-align: center;
-            font-size: 0.8rem;
-            color: #9CA3AF;
+            color: #999;
+            font-size: 13px;
+            max-width: 1400px;
+            margin: 0 auto;
         }
 
-        /* Mobile Responsive */
+        /* Responsive */
         @media (max-width: 768px) {
+            header {
+                height: 60px;
+            }
+
+            nav {
+                padding: 0 20px;
+            }
+
             .nav-links {
                 display: none;
-                position: absolute;
-                top: 70px;
-                left: 0;
-                right: 0;
-                flex-direction: column;
-                background-color: #FFFFFF;
-                border-bottom: 1px solid #E5E7EB;
-                padding: 1rem;
-                gap: 0.5rem;
+                gap: 0;
             }
 
             .nav-links.active {
                 display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                right: 0;
+                background-color: #FFFFFF;
+                border-bottom: 1px solid #E8EAEF;
+                padding: 20px;
+                gap: 15px;
             }
 
             .mobile-menu-btn {
                 display: block;
             }
 
-            .page-header h1 {
-                font-size: 2rem;
+            .page-header {
+                margin-top: 60px;
+                padding: 40px 20px;
             }
 
-            .services-grid {
+            .page-header h1 {
+                font-size: 32px;
+            }
+
+            .page-header h1 span {
+                width: 120px;
+            }
+
+            .intro-section {
+                padding: 0 20px;
+            }
+
+            .services-section,
+            .paper-section,
+            .engagement-section {
+                padding: 60px 20px;
+            }
+
+            .services-grid,
+            .engagement-types {
                 grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .timeline {
+                grid-template-columns: 1fr;
+                gap: 15px;
             }
 
             .cta-section {
-                padding: 2.5rem 1.5rem;
+                padding: 60px 20px;
             }
 
             .cta-section h2 {
-                font-size: 1.5rem;
+                font-size: 28px;
             }
 
-            .footer-container {
+            .footer-content {
                 grid-template-columns: 1fr;
-                gap: 2rem;
+                gap: 30px;
             }
         }
 
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
+        @media (max-width: 480px) {
+            header {
+                height: 60px;
             }
-            to {
-                opacity: 1;
-                transform: translateY(0);
+
+            .logo {
+                font-size: 18px;
+            }
+
+            .page-header {
+                padding: 30px 15px;
+            }
+
+            .page-header h1 {
+                font-size: 24px;
+            }
+
+            .section-heading {
+                font-size: 28px;
+            }
+
+            .intro-section,
+            .services-section {
+                padding: 40px 15px;
             }
         }
-
-        .service-card {
-            animation: fadeInUp 0.6s ease-out forwards;
-        }
-
-        .service-card:nth-child(1) { animation-delay: 0.1s; }
-        .service-card:nth-child(2) { animation-delay: 0.2s; }
-        .service-card:nth-child(3) { animation-delay: 0.3s; }
-        .service-card:nth-child(4) { animation-delay: 0.4s; }
-        .service-card:nth-child(5) { animation-delay: 0.5s; }
-        .service-card:nth-child(6) { animation-delay: 0.6s; }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <div class="nav-container">
-            <a href="../index.html" class="nav-logo">Jacques M. Jean</a>
-            <ul class="nav-links" id="navLinks">
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">Jacques M. Jean</a>
+            <ul class="nav-links">
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./advisory.html" class="active">Advisory</a></li>
-                <li><a href="./governance.html">Governance</a></li>
-                <li><a href="./insights.html">Insights</a></li>
-                <li><a href="./flagship-paper.html">Paper</a></li>
-                <li><a href="./engagement.html">Engagement</a></li>
-                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="advisory.html" class="active">Advisory</a></li>
+                <li><a href="governance.html">Governance</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
-            <button class="mobile-menu-btn" id="mobileMenuBtn">&#9776;</button>
-        </div>
-    </nav>
+            <button class="mobile-menu-btn">&#9776;</button>
+        </nav>
+    </header>
 
     <!-- Page Header -->
-    <div class="page-header">
-        <h1>Advisory <span class="underline">Services</span></h1>
-    </div>
+    <section class="page-header">
+        <div class="page-header-content">
+            <h1>Advisory Services<span></span></h1>
+        </div>
+    </section>
 
     <!-- Intro Section -->
     <section class="intro-section">
-        <p>System-level advisory for complex institutional and economic challenges. Strategic guidance for governments, institutions, and enterprises navigating AI transformation, infrastructure development, and cross-border economic integration.</p>
+        <p>System-level advisory for complex institutional and economic challenges. Strategic guidance for governments, institutions, and enterprises navigating infrastructure development, economic modernization, and cross-border integration.</p>
     </section>
 
     <!-- Services Grid -->
@@ -433,103 +550,82 @@
         <div class="services-container">
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="30" cy="30" r="28" stroke="#0F1B4C" stroke-width="2"/>
-                            <path d="M30 15v30M15 30h30" stroke="#C9A84C" stroke-width="2" stroke-linecap="round"/>
-                            <circle cx="20" cy="20" r="3" fill="#0F1B4C"/>
-                            <circle cx="40" cy="20" r="3" fill="#0F1B4C"/>
-                            <circle cx="20" cy="40" r="3" fill="#0F1B4C"/>
-                            <circle cx="40" cy="40" r="3" fill="#0F1B4C"/>
-                        </svg>
-                    </div>
                     <h3>AI Governance & Institutional Systems</h3>
-                    <div class="divider"></div>
                     <p>Architecting governance-aligned AI deployment frameworks that enhance institutional productivity, risk management, and decision transparency.</p>
                 </div>
 
                 <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="10" y="20" width="40" height="30" stroke="#0F1B4C" stroke-width="2" rx="2"/>
-                            <path d="M18 20V10M30 20V10M42 20V10" stroke="#C9A84C" stroke-width="2" stroke-linecap="round"/>
-                            <line x1="15" y1="35" x2="45" y2="35" stroke="#0F1B4C" stroke-width="1.5"/>
-                            <line x1="15" y1="45" x2="45" y2="45" stroke="#0F1B4C" stroke-width="1.5"/>
-                        </svg>
-                    </div>
                     <h3>Infrastructure Strategy & Capital Structuring</h3>
-                    <div class="divider"></div>
                     <p>Designing frameworks that improve revenue capture, asset optimization, and long-term capital efficiency across infrastructure systems.</p>
                 </div>
 
                 <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="18" cy="20" r="6" stroke="#0F1B4C" stroke-width="2"/>
-                            <circle cx="42" cy="20" r="6" stroke="#0F1B4C" stroke-width="2"/>
-                            <circle cx="30" cy="35" r="6" stroke="#0F1B4C" stroke-width="2"/>
-                            <path d="M24 25L26 30M36 25L34 30M24 30L30 41M36 30L30 41" stroke="#C9A84C" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
-                    </div>
                     <h3>Informal Economy Modernization</h3>
-                    <div class="divider"></div>
                     <p>Developing scalable digital enablement models that formalize value creation and increase financial inclusion in emerging markets.</p>
                 </div>
 
                 <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="30" cy="30" r="20" stroke="#0F1B4C" stroke-width="2"/>
-                            <path d="M30 10V50M10 30H50" stroke="#0F1B4C" stroke-width="1.5"/>
-                            <path d="M20 20L40 40M40 20L20 40" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"/>
-                        </svg>
-                    </div>
                     <h3>Global Trade & Infrastructure Systems</h3>
-                    <div class="divider"></div>
-                    <p>Designing structured cross-border frameworks that improve pricing transparency and supply chain governance in emerging markets.</p>
+                    <p>Designing structured cross-border frameworks that improve pricing transparency and supply chain governance in commodity markets.</p>
                 </div>
 
                 <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="12" y="15" width="36" height="30" stroke="#0F1B4C" stroke-width="2" rx="2"/>
-                            <circle cx="18" cy="22" r="2" fill="#C9A84C"/>
-                            <circle cx="30" cy="22" r="2" fill="#C9A84C"/>
-                            <circle cx="42" cy="22" r="2" fill="#C9A84C"/>
-                            <line x1="15" y1="35" x2="45" y2="35" stroke="#0F1B4C" stroke-width="1.5"/>
-                            <line x1="15" y1="40" x2="45" y2="40" stroke="#0F1B4C" stroke-width="1.5"/>
-                        </svg>
-                    </div>
                     <h3>Digital Economic Platforms</h3>
-                    <div class="divider"></div>
                     <p>Building integrated digital ecosystems that connect market participants, reduce transaction costs, and enable seamless value exchange.</p>
                 </div>
 
                 <div class="service-card">
-                    <div class="service-icon">
-                        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15 45L30 15L45 45" stroke="#0F1B4C" stroke-width="2" stroke-linejoin="round"/>
-                            <line x1="22" y1="35" x2="38" y2="35" stroke="#0F1B4C" stroke-width="1.5"/>
-                            <circle cx="30" cy="30" r="3" fill="#C9A84C"/>
-                            <path d="M30 25V20" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"/>
-                        </svg>
-                    </div>
                     <h3>Cross-Border Capital Integration</h3>
-                    <div class="divider"></div>
                     <p>Structuring financial mechanisms and policy frameworks that facilitate secure, compliant capital flows between markets.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Engagement Approach -->
-    <section class="approach-section">
-        <h2>Engagement Approach</h2>
-        <div class="approach-card">
-            <h3>How I Work With Clients</h3>
-            <p>I operate with a selective, outcomes-driven methodology focused on institutional value creation. Rather than generic strategic advice, I conduct rigorous diagnostic assessments of organizational systems, capital structures, and governance architectures to identify high-impact intervention points.</p>
-            <p>Each engagement is structured around measurable institutional outcomes: improved decision-making transparency, enhanced capital efficiency, reduced systemic risk, and sustainable competitive positioning. I work directly with C-suite and government leadership to translate complex economic and technical challenges into actionable strategic frameworks.</p>
-            <p>My approach emphasizes institutional design principles over tactical consulting—helping organizations build resilient execution systems capable of adapting to rapid change while maintaining governance integrity.</p>
+    <!-- Featured Paper Section -->
+    <section class="paper-section">
+        <div class="paper-container">
+            <h2 class="section-heading">Featured Paper</h2>
+            <div class="paper-card">
+                <h3>Competing with Systems, Not Transactions</h3>
+                <p>A foundational exploration of how institutional architecture determines competitive advantage in the digital economy. This paper examines the shift from transaction-based competition to system-level institutional design.</p>
+                <p>Understand the frameworks that govern sustainable economic growth, institutional resilience, and competitive positioning in cross-border markets.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Engagement Section -->
+    <section class="engagement-section">
+        <div class="engagement-container">
+            <h2 class="section-heading">Engagement Model</h2>
+            <div class="engagement-intro">
+                <p>I operate with a selective, outcomes-driven methodology focused on institutional value creation. Rather than generic strategic advice, I conduct rigorous diagnostic assessments to identify high-impact intervention points.</p>
+            </div>
+
+            <div class="engagement-types">
+                <div class="engagement-type">
+                    <h4>Strategic Advisory</h4>
+                    <p>In-depth diagnostic analysis and strategic frameworks for complex institutional and economic challenges.</p>
+                </div>
+                <div class="engagement-type">
+                    <h4>Board & Governance</h4>
+                    <p>Governance leadership, fiduciary oversight, and institutional modernization through board engagement.</p>
+                </div>
+                <div class="engagement-type">
+                    <h4>Speaking & Thought Leadership</h4>
+                    <p>Keynotes and institutional forums on economic architecture, governance, and cross-border systems.</p>
+                </div>
+            </div>
+
+            <div class="process-section">
+                <div class="process-title">Engagement Process</div>
+                <div class="timeline">
+                    <div class="timeline-step">Initial Discussion</div>
+                    <div class="timeline-step">Scope Assessment</div>
+                    <div class="timeline-step">Engagement Terms</div>
+                    <div class="timeline-step">Execution</div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -537,35 +633,34 @@
     <section class="cta-section">
         <h2>Ready to Explore Strategic Possibilities?</h2>
         <p>Connect to discuss how advisory services can address your most complex institutional and economic challenges.</p>
-        <a href="./contact.html" class="cta-button">Request a Strategic Discussion</a>
+        <a href="contact.html" class="cta-button">Start a Conversation</a>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="footer-container">
+        <div class="footer-content">
             <div class="footer-col">
                 <h4>Brand</h4>
-                <p><strong>Jacques M. Jean</strong></p>
-                <p>AI Transformation Advisor | Global Technologist</p>
+                <p>Jacques M. Jean</p>
+                <p style="font-size: 13px; color: #ccc;">AI Transformation Advisor</p>
             </div>
             <div class="footer-col">
                 <h4>Navigation</h4>
                 <ul>
                     <li><a href="../index.html">Home</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./advisory.html">Advisory</a></li>
-                    <li><a href="./governance.html">Governance</a></li>
-                    <li><a href="./insights.html">Insights</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="advisory.html">Advisory</a></li>
+                    <li><a href="governance.html">Governance</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-col">
-                <h4>Contact</h4>
-                <p><a href="mailto:contact@jacquesmjean.com">contact@jacquesmjean.com</a></p>
-                <p style="margin-top: 1rem; color: #9CA3AF; font-size: 0.8rem;">
-                    <strong>Regions:</strong><br>
-                    North America | Africa<br>
-                    Latin America | Caribbean
-                </p>
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="mailto:contact@jacquesmjean.com">Email</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
             </div>
         </div>
         <div class="footer-bottom">
@@ -574,17 +669,25 @@
     </footer>
 
     <script>
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const navLinks = document.getElementById('navLinks');
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
 
-        mobileMenuBtn.addEventListener('click', () => {
+        mobileMenuBtn.addEventListener('click', function() {
             navLinks.classList.toggle('active');
         });
 
         document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
+            link.addEventListener('click', function() {
                 navLinks.classList.remove('active');
             });
+        });
+
+        const currentPath = window.location.pathname;
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').includes(currentPath.split('/').pop())) {
+                link.classList.add('active');
+            }
         });
     </script>
 </body>
