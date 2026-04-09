@@ -222,7 +222,7 @@ export default function HomePage() {
               Send an Email
             </Button>
             <Button
-              href="https://www.linkedin.com/in/jacquesmjean"
+              href="https://www.linkedin.com/in/jacques-m-jean"
               variant="secondary"
               external
             >

@@ -49,7 +49,7 @@ export default function Footer() {
               Email
             </a>
             <a
-              href="https://www.linkedin.com/in/jacquesmjean"
+              href="https://www.linkedin.com/in/jacques-m-jean"
               target="_blank"
               rel="noopener noreferrer"
               className="text-sm text-slate-400 hover:text-gold-400 transition-colors"

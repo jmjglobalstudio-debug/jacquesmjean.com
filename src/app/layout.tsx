@@ -97,7 +97,7 @@ const jsonLd = {
       roleName: "Co-Chair (Founding)",
     },
   ],
-  sameAs: ["https://www.linkedin.com/in/jacquesmjean"],
+  sameAs: ["https://www.linkedin.com/in/jacques-m-jean"],
 };
 
 export default function RootLayout({

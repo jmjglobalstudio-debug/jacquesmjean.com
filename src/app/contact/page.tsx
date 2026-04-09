@@ -50,7 +50,7 @@ export default function ContactPage() {
               </p>
               <div className="mt-4">
                 <Button
-                  href="https://www.linkedin.com/in/jacquesmjean"
+                  href="https://www.linkedin.com/in/jacques-m-jean"
                   variant="secondary"
                   external
                 >
